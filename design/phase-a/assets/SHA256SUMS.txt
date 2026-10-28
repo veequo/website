@@ -1,0 +1,4 @@
+413e7357809ddd12fd80a96a8a396de0e401638d4acd3cb3e37532f0472ac682  design/phase-a/assets/BricolageGrotesque.ttf
+8cd08d97e89c24d0aa92edd2f0f4c8ee6195eee9b7c9f154865a58b02f0c1c0d  design/phase-a/assets/DMSans.ttf
+4b5a7d8f37f5602621c8a8d7358a6a2e71317e6c231c661e15aef0275d3e07ba  design/phase-a/assets/BricolageGrotesque-OFL.txt
+9af36190332437f5ecd09974de43c1f7c77a310a996cdd8ceb25628b458840e1  design/phase-a/assets/DMSans-OFL.txt

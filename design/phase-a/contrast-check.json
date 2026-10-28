@@ -1,0 +1,72 @@
+[
+  {
+    "foreground": "ink",
+    "background": "cream",
+    "ratio": 15.21,
+    "normal_text_AA": true,
+    "non_text_AA": true
+  },
+  {
+    "foreground": "aubergine",
+    "background": "cream",
+    "ratio": 9.68,
+    "normal_text_AA": true,
+    "non_text_AA": true
+  },
+  {
+    "foreground": "muted",
+    "background": "cream",
+    "ratio": 6.4,
+    "normal_text_AA": true,
+    "non_text_AA": true
+  },
+  {
+    "foreground": "cream",
+    "background": "aubergine",
+    "ratio": 9.68,
+    "normal_text_AA": true,
+    "non_text_AA": true
+  },
+  {
+    "foreground": "ink",
+    "background": "coral",
+    "ratio": 5.98,
+    "normal_text_AA": true,
+    "non_text_AA": true
+  },
+  {
+    "foreground": "ink",
+    "background": "yellow",
+    "ratio": 9.94,
+    "normal_text_AA": true,
+    "non_text_AA": true
+  },
+  {
+    "foreground": "coral",
+    "background": "cream",
+    "ratio": 2.55,
+    "normal_text_AA": false,
+    "non_text_AA": false
+  },
+  {
+    "foreground": "yellow",
+    "background": "cream",
+    "ratio": 1.53,
+    "normal_text_AA": false,
+    "non_text_AA": false
+  },
+  {
+    "foreground": "border",
+    "background": "cream",
+    "ratio": 1.31,
+    "normal_text_AA": false,
+    "non_text_AA": false
+  },
+  {
+    "foreground": "aubergine",
+    "background": "surface",
+    "ratio": 10.21,
+    "normal_text_AA": true,
+    "non_text_AA": true
+  }
+]
