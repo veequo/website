@@ -1,0 +1,6 @@
+import type {Metadata} from 'next';
+import {Button,PageHead,CTA} from '@/components/shared';
+import s from '@/components/site.module.css';
+
+export const metadata:Metadata={title:'Refund policy' ,description:"Draft status: not a finalized or legally reviewed policy."};
+export default function Page(){return <><div className={s.wrap}><PageHead label={'Policy review pending'} title={'Refund policy.'}>Draft status: not a finalized or legally reviewed policy.</PageHead><div className={s.content}><div className={s.reading}><div className={s.notice}>This page is a pre-launch placeholder. Final operational decisions and appropriate review are required before publication.</div><h2>Current position</h2><p>No refund promise or eligibility rule is established by this placeholder. Pricing and payment terms have not been finalized.</p><h2>Still to be confirmed</h2><p>Before publishing, confirm cancellation rules, milestone treatment, refund eligibility, timelines, exceptions, and the contact channel.</p><div className={s.actions}><Button href="/legal" secondary>All policies</Button></div></div></div></div><CTA/></>}

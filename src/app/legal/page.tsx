@@ -1,0 +1,7 @@
+import type {Metadata} from 'next';
+import Link from 'next/link';
+import {PageHead,CTA} from '@/components/shared';
+import s from '@/components/site.module.css';
+
+export const metadata:Metadata={title:'Legal & Policies' ,description:"Policy pages are being prepared. Their status is visible here so draft language cannot be mistaken for finalized terms."};
+export default function Page(){return <><div className={s.wrap}><PageHead label={'A transparent foundation'} title={'The details matter, too.'}>Policy pages are being prepared. Their status is visible here so draft language cannot be mistaken for finalized terms.</PageHead><div className={s.content}><div className={s.notice}>Pre-launch review: policies are incomplete and have not received legal review. Do not rely on these placeholders as contractual terms.</div><div className={s.list}>{[['Privacy policy','/privacy-policy','Data collection, providers, retention, and individual requests.'],['Terms of service','/terms-of-service','Scope, responsibilities, intellectual property, and commercial terms.'],['Refund policy','/refund-policy','Cancellation and refund eligibility, stages, and handling.'],['Academic integrity','/academic-integrity','Participation, attribution, and responsible academic use.']].map(([t,h,d])=><div className={s.row} key={h}><h3><Link href={h}>{t} ↗</Link></h3><p>{d}</p></div>)}</div></div></div><CTA/></>}

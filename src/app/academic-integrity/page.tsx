@@ -1,0 +1,6 @@
+import type {Metadata} from 'next';
+import {Button,PageHead,CTA} from '@/components/shared';
+import s from '@/components/site.module.css';
+
+export const metadata:Metadata={title:'Academic integrity' ,description:"Draft status: not a finalized or legally reviewed policy."};
+export default function Page(){return <><div className={s.wrap}><PageHead label={'Policy review pending'} title={'Academic integrity.'}>Draft status: not a finalized or legally reviewed policy.</PageHead><div className={s.content}><div className={s.reading}><div className={s.notice}>This page is a pre-launch placeholder. Final operational decisions and appropriate review are required before publication.</div><h2>Current position</h2><p>Student work must support participation, learning, originality, and honest attribution. Follow your institution’s rules, disclose assistance where required, and never represent assisted work as entirely unaided. Do not use support to bypass assessments or fabricate findings.</p><h2>Still to be confirmed</h2><p>Before publishing, confirm the detailed service boundaries, attribution guidance, prohibited uses, and escalation process.</p><div className={s.actions}><Button href="/legal" secondary>All policies</Button></div></div></div></div><CTA/></>}

@@ -1,0 +1,7 @@
+import type {Metadata} from 'next';
+import {notFound} from 'next/navigation';
+import {Button,PageHead,concepts} from '@/components/shared';
+import s from '@/components/site.module.css';
+export function generateStaticParams(){return concepts.map(c=>({slug:c.slug}))}
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{const {slug}=await params;const c=concepts.find(c=>c.slug===slug);return {title:c?`${c.name} — Illustrative Concept`:'Concept not found',description:c?.description}}
+export default async function Concept({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const c=concepts.find(c=>c.slug===slug);if(!c)notFound();return <div className={s.wrap}><PageHead label={`${c.type} / Illustrative concept`} title={c.title}>{c.description}</PageHead><div className={`${s.content} ${s.reading}`}><div className={s.notice}>Concept study only. Not a delivered product, a client engagement, or a claim of measured results.</div><h2>The question</h2><p>{c.challenge}</p><h2>A possible approach</h2><p>{c.approach}</p><h2>What we would evaluate</h2><p>{c.outcome}</p><h2>What comes before a real build</h2><p>User research, data permissions, accessibility requirements, a defined scope, and a test plan would need to be agreed. The interface treatments shown in the portfolio are illustrative sketches.</p><div className={s.actions}><Button href="/portfolio" secondary>All concepts</Button><Button href="/contact">Explore your idea</Button></div></div></div>}

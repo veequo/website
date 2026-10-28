@@ -1,0 +1,6 @@
+import type {Metadata} from 'next';
+import {Button,PageHead,CTA} from '@/components/shared';
+import s from '@/components/site.module.css';
+
+export const metadata:Metadata={title:'Privacy policy' ,description:"Draft status: not a finalized or legally reviewed policy."};
+export default function Page(){return <><div className={s.wrap}><PageHead label={'Policy review pending'} title={'Privacy policy.'}>Draft status: not a finalized or legally reviewed policy.</PageHead><div className={s.content}><div className={s.reading}><div className={s.notice}>This page is a pre-launch placeholder. Final operational decisions and appropriate review are required before publication.</div><h2>Current position</h2><p>The current enquiry tool prepares a draft in your browser. It does not send the draft to Veqo or store it in a database. Hosting infrastructure may process routine technical requests when the site is deployed. No analytics integration is included.</p><h2>Still to be confirmed</h2><p>Before publishing, confirm the legal entity, contact for privacy requests, data collected, processing purposes, service providers, retention periods, and applicable rights.</p><div className={s.actions}><Button href="/legal" secondary>All policies</Button></div></div></div></div><CTA/></>}
