@@ -12,11 +12,11 @@ export type LearningTopic = {
 export const learningTopics: LearningTopic[] = [
   {
     slug: 'object-detection',
-    title: 'How object detection works',
+    title: 'How YOLO object detection works',
     category: 'Computer vision',
-    description: 'How does a computer find a person, a bus, or a cup in a picture? Follow an image through YOLO, then try the model yourself.',
+    description: 'Follow an image through YOLO: preparation, predictions, filtering, and inference. Then try the model on a sample or your own image.',
     href: '/model-explorer',
     model: 'YOLO11n',
-    outcomes: ['Follow the journey from pixels to predictions', 'Try detection on a sample or your own image', 'Explore confidence scores and what models miss'],
+    outcomes: ['Understand the steps from pixels to predictions', 'Try detection on a sample or your own image', 'Inspect confidence scores and model limitations'],
   },
 ];
