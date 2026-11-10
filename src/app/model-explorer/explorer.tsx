@@ -25,9 +25,6 @@ export default function Explorer() {
 
   useEffect(()=>{
     let active=true;
-    setReady(false);
-    setDetections(null);
-    setError('');
     revision.current++;
     const img=new Image();
     img.onload=()=>{
@@ -47,6 +44,7 @@ export default function Explorer() {
   useEffect(()=>()=>{if(upload.current)URL.revokeObjectURL(upload.current);},[]);
 
   function choose(src:string,title:string){
+    if(src!==source)setReady(false);
     revision.current++;
     setSource(src);
     setName(title);
